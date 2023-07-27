@@ -1,1 +1,23 @@
-hi ijkfffkii
+To host a basic website using an Amazon EC2 instance on AWS, you can follow these steps to create a simple script:
+
+Launch an EC2 Instance: Use AWS Management Console to launch an EC2 instance with an appropriate Amazon Machine Image (AMI) like Amazon Linux.
+
+Configure Security Group: In the EC2 dashboard, create a new security group that allows incoming traffic on port 80 (HTTP) and port 22 (SSH) from your IP address or any desired source.
+
+Connect to EC2 Instance: Use SSH to connect to your EC2 instance using your key pair.
+
+Update System Packages: Run the following commands to update system packages and install necessary utilities:
+
+$ sudo yum update -y
+$ sudo yum install -y httpd
+
+To start the Apache Server
+
+$ systemctl  start httpd
+$ systemctl enable httpd
+
+Create Website Directory: Create a directory to store your website files, for example:
+
+$ sudo mkdir /var/www/html/mywebsite
+
+Remember that this script is a basic setup for hosting a simple static website.
