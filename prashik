@@ -8,16 +8,16 @@ Connect to EC2 Instance: Use SSH to connect to your EC2 instance using your key 
 
 Update System Packages: Run the following commands to update system packages and install necessary utilities:
 
-$ sudo yum update -y
-$ sudo yum install -y httpd
+```$ sudo yum update -y```
+```$ sudo yum install -y httpd```
 
 To start the Apache Server
 
-$ systemctl  start httpd
-$ systemctl enable httpd
+```$ systemctl  start httpd```
+```$ systemctl enable httpd```
 
 Create Website Directory: Create a directory to store your website files, for example:
 
-$ sudo mkdir /var/www/html/mywebsite
+```$ sudo mkdir /var/www/html/mywebsite```
 
 Remember that this script is a basic setup for hosting a simple static website.
